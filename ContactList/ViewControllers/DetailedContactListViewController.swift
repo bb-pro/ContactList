@@ -25,24 +25,26 @@ extension DetailedContactListViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "detailedContact", for: indexPath)
+        let sectionIndex = indexPath.section
         var content = cell.defaultContentConfiguration()
         
         if indexPath.row == 0 {
-            content.text = contacts[indexPath.row].number
-            content.image = UIImage(named: "phone")
+            content.text = contacts[sectionIndex].number
+            content.image = UIImage(systemName: "phone")
         } else {
-            content.text = contacts[indexPath.row].email
-            content.image = UIImage(named: "mail")
+            content.text = contacts[sectionIndex].email
+            content.image = UIImage(systemName: "mail")
         }
-        cell.contentConfiguration = content
         
+        cell.contentConfiguration = content
         return cell
     }
     
-}
-extension DetailedContactListViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let header = contacts[section].contact
         return header
     }
 }
+
+  
+
