@@ -5,7 +5,8 @@
 //  Created by Bektemur Mamashayev on 02/03/23.
 //
 
-let dataStore = DataStore()
+private let dataStore = DataStore()
+
 struct Person {
     var contact: String
     var email: String
