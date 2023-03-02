@@ -9,16 +9,15 @@ import UIKit
 
 class DetailedContactListViewController: UITableViewController {
     private let contacts = Person.getContacts()
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 }
 
 // MARK: - Table view data source
 extension DetailedContactListViewController {
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return contacts.count
     }
