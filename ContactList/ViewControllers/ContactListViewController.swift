@@ -19,7 +19,10 @@ class ContactListViewController: UITableViewController {
             return
         }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        infoVC.navigationItem.title = contacts[indexPath.row].contact
+        let person = contacts[indexPath.row]
+        infoVC.navigationItem.title = person.contact
+        infoVC.phone = person.number
+        infoVC.email = person.email
     }
 }
 
@@ -37,5 +40,4 @@ extension ContactListViewController {
         
         return cell
     }
-
 }
