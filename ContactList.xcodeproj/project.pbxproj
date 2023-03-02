@@ -15,6 +15,7 @@
 		80DFD40B29B069F500520F8F /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DFD40A29B069F500520F8F /* ContactListViewController.swift */; };
 		80DFD41029B06A7300520F8F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DFD40F29B06A7300520F8F /* Person.swift */; };
 		80DFD41229B06C2200520F8F /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DFD41129B06C2200520F8F /* DataStore.swift */; };
+		80F461FF29B08ED000D5315B /* ContacInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F461FE29B08ED000D5315B /* ContacInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		80DFD40A29B069F500520F8F /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		80DFD40F29B06A7300520F8F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		80DFD41129B06C2200520F8F /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		80F461FE29B08ED000D5315B /* ContacInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContacInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				80DFD40A29B069F500520F8F /* ContactListViewController.swift */,
+				80F461FE29B08ED000D5315B /* ContacInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				80DFD3F829B068FD00520F8F /* SceneDelegate.swift in Sources */,
 				80DFD41029B06A7300520F8F /* Person.swift in Sources */,
 				80DFD41229B06C2200520F8F /* DataStore.swift in Sources */,
+				80F461FF29B08ED000D5315B /* ContacInfoViewController.swift in Sources */,
 				80DFD40B29B069F500520F8F /* ContactListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

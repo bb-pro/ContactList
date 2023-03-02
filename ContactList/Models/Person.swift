@@ -12,13 +12,22 @@ struct Person {
     var number: String
     
     static func getContacts() -> [Person] {
-        var contacts: [Person] = []
-        for (name, surname) in zip(dataStore.names, dataStore.surnames).shuffled() {
-            contacts.append(
-                Person(contact: "\(name) \(surname)",
-                       email: dataStore.emails.randomElement()!,
-                       number: dataStore.numbers.randomElement()!))
+        var contacList: [Person] = []
+        
+        let names = dataStore.names.shuffled()
+        let surnames = dataStore.surnames.shuffled()
+        let emails = dataStore.emails.shuffled()
+        let numbers = dataStore.numbers.shuffled()
+        
+        for (i, name) in names.enumerated() {
+            contacList.append(
+                Person(
+                contact: "\(name) \(surnames[i])",
+                email: emails[i],
+                number: numbers[i]
+                )
+            )
         }
-        return contacts
+        return contacList
     }
 }

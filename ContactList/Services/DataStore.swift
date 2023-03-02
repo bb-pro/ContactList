@@ -6,7 +6,7 @@
 //
 
 
-class DataStore {
+final class DataStore {
     let names =
     [
         "John",
@@ -59,4 +59,5 @@ class DataStore {
         "+49-89-699-48018",
         "+49-89-436-48018",
     ]
+
 }
