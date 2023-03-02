@@ -9,11 +9,7 @@ import UIKit
 
 class ContactListViewController: UITableViewController {
     private let contacts = Person.getContacts()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print(Person.getContacts().count)
-    }
+  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let infoVC = segue.destination as? ContacInfoViewController else {
             return
