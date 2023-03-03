@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8027A63929B24BD400A025E1 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8027A63829B24BD400A025E1 /* TabBarViewController.swift */; };
 		803C24C629B09CC200F868DC /* DetailedContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C24C529B09CC200F868DC /* DetailedContactListViewController.swift */; };
 		80DFD3F629B068FD00520F8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DFD3F529B068FD00520F8F /* AppDelegate.swift */; };
 		80DFD3F829B068FD00520F8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DFD3F729B068FD00520F8F /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8027A63829B24BD400A025E1 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		803C24C529B09CC200F868DC /* DetailedContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedContactListViewController.swift; sourceTree = "<group>"; };
 		80DFD3F229B068FD00520F8F /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80DFD3F529B068FD00520F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		80DFD40D29B06A2E00520F8F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8027A63829B24BD400A025E1 /* TabBarViewController.swift */,
 				80DFD40A29B069F500520F8F /* ContactListViewController.swift */,
 				80F461FE29B08ED000D5315B /* ContacInfoViewController.swift */,
 				803C24C529B09CC200F868DC /* DetailedContactListViewController.swift */,
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8027A63929B24BD400A025E1 /* TabBarViewController.swift in Sources */,
 				80DFD3F629B068FD00520F8F /* AppDelegate.swift in Sources */,
 				80DFD3F829B068FD00520F8F /* SceneDelegate.swift in Sources */,
 				80DFD41029B06A7300520F8F /* Person.swift in Sources */,
