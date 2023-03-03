@@ -8,7 +8,7 @@
 import UIKit
 
 class DetailedContactListViewController: UITableViewController {
-    private let contacts = Person.getContacts()
+    var contacts: [Person]!
 }
 
 // MARK: - Table view data source
