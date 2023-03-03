@@ -5,14 +5,18 @@
 //  Created by Bektemur Mamashayev on 02/03/23.
 //
 
-private let dataStore = DataStore()
-
 struct Person {
-    var contact: String
-    var email: String
-    var number: String
+    let name: String
+    let surname: String
+    let email: String
+    let number: String
+    
+    var contact: String {
+        name + " " + surname
+    }
     
     static func getContacts() -> [Person] {
+        let dataStore = DataStore()
         var contacList: [Person] = []
         
         let names = dataStore.names.shuffled()
@@ -20,13 +24,13 @@ struct Person {
         let emails = dataStore.emails.shuffled()
         let numbers = dataStore.numbers.shuffled()
         
-        for (i, name) in names.enumerated() {
+        for (index, _) in names.enumerated() {
             contacList.append(
                 Person(
-                contact: "\(name) \(surnames[i])",
-                email: emails[i],
-                number: numbers[i]
-                )
+                    name: names[index],
+                    surname: surnames[index],
+                    email: emails[index],
+                    number: numbers[index])
             )
         }
         return contacList
