@@ -15,11 +15,11 @@ class DetailedContactListViewController: UITableViewController {
 extension DetailedContactListViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        2
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return contacts.count
+        contacts.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -40,10 +40,16 @@ extension DetailedContactListViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let header = contacts[section].contact
-        return header
+        contacts[section].contact
     }
 }
 
-  
+//MARK: - UITableViewDelegate
+extension DetailedContactListViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+}
+
+
 
