@@ -8,7 +8,7 @@
 import UIKit
 
 class ContactListViewController: UITableViewController {
-    private let contacts = Person.getContacts()
+    let contacts = Person.getContacts()
   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let infoVC = segue.destination as? ContacInfoViewController else {
