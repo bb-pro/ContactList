@@ -8,7 +8,9 @@
 
 final class DataStore {
     
-    let names =
+    static let shared = DataStore()
+    
+    var names =
     [
         "John",
         "Sharon",
@@ -60,5 +62,32 @@ final class DataStore {
         "+49-89-699-48018",
         "+49-89-436-48018",
     ]
+    //Синглтон
+    private init() {}
 
 }
+
+//Singleton
+class PersonManager {
+    
+    static let shared = PersonManager()
+    
+    private init() {}
+    
+    let dataStore = DataStore.shared
+    
+    func add(name: String) {
+        if !dataStore.names.contains(name) {
+            dataStore.names.append(name)
+            print("Name \(name) is added \n")
+        }
+    }
+    
+    func getNames() {
+        dataStore.names.forEach { name in
+            print(name)
+        }
+    }
+}
+
+
