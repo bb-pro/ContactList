@@ -7,6 +7,7 @@
 
 
 final class DataStore {
+    
     let names =
     [
         "John",
