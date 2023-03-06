@@ -17,7 +17,7 @@ extension DetailedContactListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         2
     }
-    
+     
     override func numberOfSections(in tableView: UITableView) -> Int {
         contacts.count
     }
